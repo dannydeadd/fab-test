@@ -36,28 +36,32 @@
     .embed-embed > .pxe-absolute.pxe-z-50 {
         position: fixed !important;
         z-index: 2147483647 !important;
-    /* Targets the icebreaker box */
+    }
+    /* Main icebreaker container: background, border */
     .pxe-group.pxe-cursor-pointer.pxe-border {
-      /* Change background and border as needed */
-      background: #fff8e1 !important;
-      border-color: #cdb4fd !important;
+      background: #fff8e1 !important;     /* Light yellow - change as needed */
+      border-color: #cdb4fd !important;   /* Pastel purple - change as needed */
+      border-radius: 8px !important;      /* Rounded corners */
+      margin-bottom: 12px !important;     /* Space between icebreakers */
+      transition: background 0.2s;
     }
     
-    /* Targets the text inside the icebreaker */
+    /* Icebreaker text: color, font, outline, size */
     .pxe-group.pxe-cursor-pointer.pxe-border p {
-      font-size: 1.35rem !important; /* Adjust this value for your preferred size */
-      font-weight: 600 !important;
-      color: #302b63 !important;
-      /* Optional: add outline or shadow for readability */
-      text-shadow: 0 1px 2px rgba(255,255,255,0.3);
-      border: 1px solid #cdb4fd !important; /* Add an outline if desired */
-      border-radius: 6px;
-      padding: 4px 8px;
+      color: #302b63 !important;           /* Deep purple text - change as needed */
+      font-size: 1.35rem !important;       /* Change font size here */
+      font-weight: 600 !important;         /* Bold font */
+      text-shadow: 0 1px 2px #fff4 !important; /* Soft shadow for readability */
+      border: 1.5px solid #cdb4fd !important;  /* Outline - change color as needed */
+      border-radius: 6px !important;
+      padding: 6px 14px !important;        /* Padding inside the text box */
+      background: transparent !important;  /* Keep background transparent for text */
+      display: inline-block;
     }
     
-    /* Optional: add spacing between icebreakers */
+    /* Optional: more spacing between conversation starters (vertical layout) */
     .pxe-flex-col .pxe-group {
-      margin-bottom: 10px;
+      margin-bottom: 14px !important;
     }
   </style>
 </head>
