@@ -36,15 +36,28 @@
     .embed-embed > .pxe-absolute.pxe-z-50 {
         position: fixed !important;
         z-index: 2147483647 !important;
-    }
+    /* Targets the icebreaker box */
     .pxe-group.pxe-cursor-pointer.pxe-border {
-      background: #e3e6ff !important;
-      border-color: #6247aa !important;
+      /* Change background and border as needed */
+      background: #fff8e1 !important;
+      border-color: #cdb4fd !important;
     }
+    
+    /* Targets the text inside the icebreaker */
     .pxe-group.pxe-cursor-pointer.pxe-border p {
-      color: #2d085e !important;
-      font-weight: bold !important;
-      font-size: 1.1em !important;
+      font-size: 1.35rem !important; /* Adjust this value for your preferred size */
+      font-weight: 600 !important;
+      color: #302b63 !important;
+      /* Optional: add outline or shadow for readability */
+      text-shadow: 0 1px 2px rgba(255,255,255,0.3);
+      border: 1px solid #cdb4fd !important; /* Add an outline if desired */
+      border-radius: 6px;
+      padding: 4px 8px;
+    }
+    
+    /* Optional: add spacing between icebreakers */
+    .pxe-flex-col .pxe-group {
+      margin-bottom: 10px;
     }
   </style>
 </head>
